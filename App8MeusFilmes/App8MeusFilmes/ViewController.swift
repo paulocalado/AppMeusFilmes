@@ -14,8 +14,8 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        filmes.append(Filme(titulo:"filme1", descricao: "descricao1"))
-        filmes.append(Filme(titulo:"filme 2", descricao:"descricao 2"))
+        filmes.append(Filme(titulo:"filme1", descricao: "descricao1", imagem: #imageLiteral(resourceName: "filme1")))
+        filmes.append(Filme(titulo:"filme 2", descricao:"descricao 2", imagem: #imageLiteral(resourceName: "filme2")))
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,6 +37,7 @@ class ViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: movieCell, for: indexPath)
         cell.textLabel?.text = filme.titulo
+        cell.imageView?.image = filme.imagem
         return cell
     }
 
