@@ -47,9 +47,10 @@ class ViewController: UITableViewController {
         cell.movieTitle.text = filme.titulo
         cell.movieDescription.text = filme.descricao
         cell.movieImage.image = filme.imagem
-        /*cell.textLabel?.text = filme.titulo
-        cell.imageView?.image = filme.imagem*/
         
+       /* cell.movieImage.layer.cornerRadius = 42
+        cell.movieImage.clipsToBounds = true arredondando a imagem programaticamente
+        */
         return cell
     }
 
