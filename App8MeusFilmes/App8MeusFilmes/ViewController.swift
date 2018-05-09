@@ -53,6 +53,19 @@ class ViewController: UITableViewController {
         */
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "segueDetalhe"){
+            
+            if let indexPath = tableView.indexPathForSelectedRow {
+                
+                let filme = self.filmes[indexPath.row]
+                let viewControllerDestino = segue.destination as! DetalhesViewController
+                viewControllerDestino.filme = filme
+            }
+            
+        }
+    }
 
 }
 

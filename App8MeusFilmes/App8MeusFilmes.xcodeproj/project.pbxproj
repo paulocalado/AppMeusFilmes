@@ -16,6 +16,7 @@
 		3E454E70209C9E1900F6EA75 /* App8MeusFilmesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E454E6F209C9E1900F6EA75 /* App8MeusFilmesUITests.swift */; };
 		3E454E7E209C9F7D00F6EA75 /* Filme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E454E7D209C9F7D00F6EA75 /* Filme.swift */; };
 		3E454E80209CAFC000F6EA75 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E454E7F209CAFC000F6EA75 /* MovieCell.swift */; };
+		3EFB646420A29AB100740C90 /* DetalhesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFB646320A29AB100740C90 /* DetalhesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		3E454E71209C9E1900F6EA75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E454E7D209C9F7D00F6EA75 /* Filme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filme.swift; sourceTree = "<group>"; };
 		3E454E7F209CAFC000F6EA75 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		3EFB646320A29AB100740C90 /* DetalhesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				3E454E5B209C9E1900F6EA75 /* Info.plist */,
 				3E454E7D209C9F7D00F6EA75 /* Filme.swift */,
 				3E454E7F209CAFC000F6EA75 /* MovieCell.swift */,
+				3EFB646320A29AB100740C90 /* DetalhesViewController.swift */,
 			);
 			path = App8MeusFilmes;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				3E454E52209C9E1900F6EA75 /* ViewController.swift in Sources */,
 				3E454E7E209C9F7D00F6EA75 /* Filme.swift in Sources */,
 				3E454E80209CAFC000F6EA75 /* MovieCell.swift in Sources */,
+				3EFB646420A29AB100740C90 /* DetalhesViewController.swift in Sources */,
 				3E454E50209C9E1900F6EA75 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

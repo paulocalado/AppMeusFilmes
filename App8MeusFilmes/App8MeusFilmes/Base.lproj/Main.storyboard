@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -67,6 +68,7 @@
                                     <outlet property="movieDescription" destination="vHO-ey-y0K" id="wdb-fO-Xn6"/>
                                     <outlet property="movieImage" destination="8tb-qz-PLU" id="64Z-kS-tmW"/>
                                     <outlet property="movieTitle" destination="CQp-Vw-m38" id="jvr-10-mFC"/>
+                                    <segue destination="dqC-Wu-c5p" kind="show" identifier="segueDetalhe" id="QRi-RQ-bL2"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -80,6 +82,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQs-TV-Cmd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="474.39999999999998" y="20.239880059970016"/>
+        </scene>
+        <!--Detalhes View Controller-->
+        <scene sceneID="gi6-2O-2QJ">
+            <objects>
+                <viewController id="dqC-Wu-c5p" customClass="DetalhesViewController" customModule="App8MeusFilmes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7I3-sm-Gf4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="CAR-2I-kaK">
+                                <rect key="frame" x="61" y="186.5" width="252" height="358.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filme1" translatesAutoresizingMaskIntoConstraints="NO" id="jHe-Oh-hHq">
+                                        <rect key="frame" x="0.0" y="0.0" width="252" height="268"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edk-rl-exi">
+                                        <rect key="frame" x="0.0" y="285" width="252" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqu-0b-S9R">
+                                        <rect key="frame" x="0.0" y="338" width="252" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CAR-2I-kaK" firstAttribute="centerX" secondItem="fAS-Df-dva" secondAttribute="centerX" id="oHI-15-gtH"/>
+                            <constraint firstItem="CAR-2I-kaK" firstAttribute="centerY" secondItem="fAS-Df-dva" secondAttribute="centerY" id="rrF-nQ-sak"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fAS-Df-dva"/>
+                    </view>
+                    <connections>
+                        <outlet property="movieDescription" destination="xqu-0b-S9R" id="77u-ZQ-WvP"/>
+                        <outlet property="movieImage" destination="jHe-Oh-hHq" id="cmt-XN-KA7"/>
+                        <outlet property="movieTitle" destination="edk-rl-exi" id="HZQ-LV-8nG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iKK-9L-Bdw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1301.5999999999999" y="19.340329835082461"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="o3U-xN-tmX">
@@ -100,4 +148,7 @@
             <point key="canvasLocation" x="-225" y="20"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="filme1" width="252" height="268"/>
+    </resources>
 </document>
